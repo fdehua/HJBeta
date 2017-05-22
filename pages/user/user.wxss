@@ -1,0 +1,52 @@
+/* pages/user/user.wxss */
+@import "/common.wxss";
+.page-body-wrapper {
+  margin-top: 200rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 0 50rpx;
+  box-sizing: border-box;
+}
+.page-body-title {
+  font-size: 60rpx;
+  /*TODO 使用 rpx */
+  line-height: 100px;
+}
+.page-body-text {
+  color: #bbb;
+  font-size: 28rpx;
+  /*TODO 使用 rpx */
+  line-height: 20px;
+  margin: 0 0 100rpx 0;
+  text-align: center;
+}
+.page-body-button {
+  width: 100%;
+}
+
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 100%;
+}
+.userinfo-avatar {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 10rpx;
+  border-radius: 50%;
+  background-size: cover;
+}
+.userinfo-nickname {
+  color: #aaa;
+  font-size: 30rpx;
+  margin-left: 40rpx;
+}
+
+.usermotto {
+  margin: 30px;
+}

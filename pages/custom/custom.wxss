@@ -1,0 +1,72 @@
+/* pages/custom/custom.wxss */
+
+@import "/common.wxss";
+.custon-contact
+{
+  font-size: 32rpx;
+  color: #fff;
+  width:200rpx;
+  margin: 20rpx;
+  padding-top: 100rpx;
+   padding-bottom: 50rpx;
+  position: relative;
+  min-height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  background-repeat: no-repeat;
+  background-size: 100% auto; 
+  background-position:center center;
+  /*background-image: url('/images/index/tri.png');*/
+  /*微信暂不支持静态bgimg文件，改用服务器url*/
+  background-image: url('https://mina.tijian18.com/images/bg/week-icon.png');
+  align-items: center;
+  text-align: center;
+}
+.custom-tel
+{
+display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+}
+.custom-img
+{
+  width: 24px; 
+  min-height: 100%;
+ vertical-align:middle;
+ margin: 20rpx;
+}
+.custom-text
+{
+  font-size: 32rpx;
+}
+.custom-tip-title{
+  font-size: 52rpx;
+}
+.custom-tip-desc{
+  margin-top: 10rpx;
+  color: #888888;
+  font-size: 28rpx;
+}
+.wave {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 0;
+  opacity: 0.725;
+  height: 260rpx;
+  width: 2250rpx;
+  animation: wave 10s linear infinite;
+}
+.wave-bg {
+  z-index: 1;
+  animation: wave-bg 10.25s linear infinite;
+}
+@keyframes wave{
+  from {transform: translate3d(125rpx,0,0);}
+  to {transform: translate3d(1125rpx,0,0);}
+}
+@keyframes wave-bg{
+  from {transform: translate3d(375rpx,0,0);}
+  to {transform: translate3d(1375rpx,0,0);}
+}

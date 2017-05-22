@@ -1,0 +1,27 @@
+<!--pages/custom/custom.wxml-->
+<import src="/templates/userinfo.wxml"/>
+
+
+<view class="page">
+<!--使用用户信息模版-->
+  <template is="userinfo" data="{{userInfo}}"/>
+<!--在线客服-->
+
+<view class="custon-contact">    
+    <contact-button type="default-light" size="400" session-from="HJMina"></contact-button>
+    在线客服
+</view>
+
+<!--<view class="custom-tel">
+  热线电话：<image src="/image/icon/telephone.png" mode="widthFix" class="custom-img"/>
+  <text bindtap="onTel" class="custom-text">4006700128</text>
+
+  </view>-->
+   <view class="weui-btn-area">
+    <button bindtap="onTel">
+    热线电话：
+    <image src="/image/icon/telephone.png" mode="widthFix" class="custom-img"/>
+    4006700128
+    </button>
+    </view>
+</view>

@@ -1,0 +1,56 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/user/user",
+    "pages/user/login/login",
+    "pages/user/bindmobile/bindmobile",
+    "pages/custom/custom",
+    "pages/tool/tool",
+    "pages/news/news",
+    "pages/maps/maps",
+    "pages/logs/logs"
+  ],
+
+   "tabBar": {
+   "color":"#9B9B9B",
+    "selectedColor":"#F7982A",
+    "backgroundColor":"#fff",
+    "borderStyle":"white",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "image/tab/tabHome.png",
+      "selectedIconPath": "image/tab/tabHomeSelect.png"
+    }, {
+      "pagePath": "pages/tool/tool",
+      "text": "工具",
+      "iconPath": "image/tab/tabTool.png",
+      "selectedIconPath": "image/tab/tabToolSelect.png"
+    }, {
+      "pagePath": "pages/user/user",
+      "text": "我",
+      "iconPath": "image/tab/tabUser.png",
+      "selectedIconPath": "image/tab/tabUserSelect.png"
+    }, {
+      "pagePath": "pages/custom/custom",
+      "text": "客服",
+      "iconPath": "image/tab/tabContact.png",
+      "selectedIconPath": "image/tab/tabContactSelect.png"
+    }]
+  },
+    "window":{
+    
+    "backgroundTextStyle":"light",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "华检体检 关注您和家人的健康",
+    "navigationBarBackgroundColor": "#f8f8f8",
+    "backgroundColor": "#f8f8f8"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

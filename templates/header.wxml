@@ -1,0 +1,6 @@
+<template name="header">
+  <view class="page-header">
+    <text class="page-header-text">page-header-text</text>
+    <view class="page-header-line"></view>
+  </view>
+</template>

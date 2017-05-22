@@ -1,0 +1,27 @@
+/** common.wxss **/
+.container{
+  background-color: #f6f6f6;
+  padding: 0;
+}
+
+
+.swiper-item{
+  display: block;
+  height: 150px;
+}
+
+
+.slide-image{
+    width:96%;
+    height:7.25rem;
+    background: #f5f5f5;
+    text-align: center;
+}
+
+
+.remind-img {
+  width: 250rpx;
+  height: 250rpx;
+  padding-bottom: 25rpx;
+}
+ 

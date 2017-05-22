@@ -1,0 +1,60 @@
+<!--pages/tool/tool.wxml-->
+<view class="container">
+  <view  bindtap="bindViewTap" class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+ <text class="user-motto">{{wxusercode}}</text>
+  <text class="user-motto">{{wxusercodeinfo}}</text>
+   <button bindtap="getwxusercode" class="reward-btn ">登录code</button>
+     <text class="user-motto">OpenId：{{OpenId}}</text>
+       <text class="user-motto">sessionId：{{sessionId}}</text>
+  
+      <text class="user-motto">{{testwebinfo}}</text>
+
+ 
+       <button bindtap="testpost">POST测试</button>
+       <button bindtap="testget">GET测试</button>
+        <text class="user-motto">messageCode:{{messageCode}}</text>
+         <text class="user-motto">formId:{{formId}}</text>
+   <button bindtap="testformSubmit">POSTSubmit测试</button>
+
+    <text class="user-motto">formIdsubmit:{{formIdsubmit}}</text>
+    
+<form bindsubmit="formSubmit" bindreset="formReset" report-submit>
+    
+    <view class="btn-area">
+        <button formType="submit">发送模板消息</button>
+        <button formType="reset">重置</button>
+
+    </view>
+</form>
+
+<contact-button type="default-light" size="20" session-from="weapp">客服</contact-button>
+ <text class="user-motto">dasaadsdfsdfdsff</text>
+ <text class="user-motto">dasaadsdfsdfdsff</text>
+ <text class="user-motto">dasaadsdfsdfdsff</text>
+
+ <button  open-type="contact">客服</button>
+
+
+
+<input  />
+
+ <button bindtap="wxpay">微信支付</button>
+ <text class="user-motto">微信支付返回：{{payinfo}}</text>
+
+
+<contact-button 
+  type="default-dark" 
+  size="200"
+  session-from="HJMina"
+>
+</contact-button>
+
+<button open-type="contact" type="primary">进入客服会话</button>
+</view>
+
