@@ -6,7 +6,7 @@
   <template is="userinfo" data="{{userInfo}}"/>
  
 
-  <image wx:if="{{remind == '加载中'}}" class="remind-img" src="/image/icon/loading.gif"></image>
+  <image wx:if="{{remind == '加载中'}}" class="remind-img" src="/images/icon/loading.gif"></image>
 
 <!--   
       <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
@@ -41,7 +41,7 @@
 <!--<view class="widget">
 <navigator url="/pages/maps/maps" class="widget">
 
-<text class="widget_name">地图</text><image class="widget_arrow" src="/image/icon/arrowright.png" mode="aspectFill" /></navigator>
+<text class="widget_name">地图</text><image class="widget_arrow" src="/images/icon/arrowright.png" mode="aspectFill" /></navigator>
 
   <view class="widget_line {{index == 0 ? 'widget_line_first' : ''}}"></view>
 
@@ -61,13 +61,13 @@
           <view class="widgets_item">
               <view id="{{item.id}}" class="widgets_info {{item.open ? 'widgets_info_show' : ''}}" bindtap="widgetsToggle">
                   <text class="widgets_info-name">{{item.name}}</text>
-                  <image class="widgets_info-img" src="/image/icon/arrowright.png" mode="aspectFill" />
+                  <image class="widgets_info-img" src="/images/icon/arrowright.png" mode="aspectFill" />
               </view>
               <view class="widgets_list {{item.open ? 'widgets_list_show' : ''}}">
                   <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*this">
                       <navigator url="/pages/{{page}}/{{page}}" class="widget">
                           <text class="widget_name">{{page}}</text>
-                          <image class="widget_arrow" src="/image/icon/arrowright.png" mode="aspectFill" />
+                          <image class="widget_arrow" src="/images/icon/arrowright.png" mode="aspectFill" />
                           <view class="widget_line {{index == 0 ? 'widget_line_first' : ''}}"></view>
                       </navigator>
                   </block>
@@ -78,5 +78,5 @@
 </view>
 
 <view class="page__ft">
-        <image src="/image/icon/icon-footer.png" style="width: 84px; height: 19px;"></image>
+        <image src="/images/icon/icon-footer.png" style="width: 84px; height: 19px;"></image>
  </view>

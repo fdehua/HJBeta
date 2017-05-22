@@ -19,23 +19,23 @@
     "list": [{
       "pagePath": "pages/index/index",
       "text": "首页",
-      "iconPath": "image/tab/tabHome.png",
-      "selectedIconPath": "image/tab/tabHomeSelect.png"
+      "iconPath": "images/tab/tabHome.png",
+      "selectedIconPath": "images/tab/tabHomeSelect.png"
     }, {
       "pagePath": "pages/tool/tool",
       "text": "工具",
-      "iconPath": "image/tab/tabTool.png",
-      "selectedIconPath": "image/tab/tabToolSelect.png"
+      "iconPath": "images/tab/tabTool.png",
+      "selectedIconPath": "images/tab/tabToolSelect.png"
     }, {
       "pagePath": "pages/user/user",
       "text": "我",
-      "iconPath": "image/tab/tabUser.png",
-      "selectedIconPath": "image/tab/tabUserSelect.png"
+      "iconPath": "images/tab/tabUser.png",
+      "selectedIconPath": "images/tab/tabUserSelect.png"
     }, {
       "pagePath": "pages/custom/custom",
       "text": "客服",
-      "iconPath": "image/tab/tabContact.png",
-      "selectedIconPath": "image/tab/tabContactSelect.png"
+      "iconPath": "images/tab/tabContact.png",
+      "selectedIconPath": "images/tab/tabContactSelect.png"
     }]
   },
     "window":{

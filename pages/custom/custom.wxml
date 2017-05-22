@@ -20,7 +20,7 @@
    <view class="weui-btn-area">
     <button bindtap="onTel">
     热线电话：
-    <image src="/image/icon/telephone.png" mode="widthFix" class="custom-img"/>
+    <image src="/images/icon/telephone.png" mode="widthFix" class="custom-img"/>
     4006700128
     </button>
     </view>
