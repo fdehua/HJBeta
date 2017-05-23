@@ -1,15 +1,11 @@
 // pages/user/user.js
 var app = getApp()
 var QQMapWX = require('../../utils/qqmap-wx-jssdk.js');
-var base64 = require("../../image/base64");
 var qqmapsdk;
 Page({
   onLoad: function () {
     var that = this
-    this.setData({
-      icon20: base64.icon20,
-      icon60: base64.icon60
-    });
+ 
      // 实例化API核心类
         qqmapsdk = new QQMapWX({
             key: '2DEBZ-JXW3U-MIVVB-2D5V4-K2WJ3-OUBI3'

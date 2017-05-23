@@ -1,14 +1,8 @@
 <!--pages/tool/tool.wxml-->
-<view class="container">
-  <view  bindtap="bindViewTap" class="userinfo">
-    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
-  </view>
-  <view class="usermotto">
-    <text class="user-motto">{{motto}}</text>
-  </view>
- <text class="user-motto">{{wxusercode}}</text>
-  <text class="user-motto">{{wxusercodeinfo}}</text>
+<import src="/templates/userinfo.wxml"/>
+<view class="page">
+   <template is="userinfo" data="{{userInfo}}"/>
+
    <button bindtap="getwxusercode" class="reward-btn ">登录code</button>
      <text class="user-motto">OpenId：{{OpenId}}</text>
        <text class="user-motto">sessionId：{{sessionId}}</text>

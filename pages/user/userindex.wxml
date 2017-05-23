@@ -1,12 +1,26 @@
 <!--pages/user/user.wxml-->
-<import src="/templates/header.wxml" />
-<import src="/templates/footer.wxml" />
-<import src="/templates/userinfo.wxml"/>
 
+<import src="/templates/userinfo.wxml"/>
+<import src="/templates/footer.wxml" />
 <view class="page">
- <view class="page__bd">
+   <view class="page__bd">
   <template is="userinfo" data="{{userInfo}}"/>
-  
+
+  <view class="weui-grids">
+      <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="/images/icon/card.png" />
+        <view class="weui-grid__label">会员卡</view>
+      </navigator>
+      <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="/images/icon/coupon.png" />
+        <view class="weui-grid__label">优惠券</view>
+      </navigator>
+      <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="/images/icon/exam.png" />
+        <view class="weui-grid__label">体检预约</view>
+      </navigator>
+  </view>
+
         <view class="weui-cells__title">个人中心</view>
         <view class="weui-cells weui-cells_after-title">
             <navigator url="bindmobile/bindmobile" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
@@ -17,21 +31,28 @@
                 <view class="weui-cell__ft weui-cell__ft_in-access">绑定微信、手机</view>
             </navigator>
       
-              <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+              <!--<navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <image src="/images/icon/card.png" class="navigator-icon"></image>
                 </view>
                 <view class="weui-cell__bd">会员卡</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">激活（查看）</view>
             </navigator>
-                
-              <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                -->
+              <!--<navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <image src="/images/icon/exam.png" class="navigator-icon"></image>
                 </view>
                 <view class="weui-cell__bd">体检预约</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">体检套餐购买、预约</view>
-            </navigator>
+            </navigator>-->
+                        <!--<navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="/images/icon/coupon.png" class="navigator-icon"></image>
+                </view>
+                <view class="weui-cell__bd">我的优惠</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">积分、优惠券、折扣券</view>
+            </navigator>-->
             <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <image src="/images/icon/report.png" class="navigator-icon"></image>
@@ -46,13 +67,7 @@
                 <view class="weui-cell__bd">亲友家属</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">体检联系人管理</view>
             </navigator>
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <view class="weui-cell__hd">
-                    <image src="/images/icon/coupon.png" class="navigator-icon"></image>
-                </view>
-                <view class="weui-cell__bd">我的优惠</view>
-                <view class="weui-cell__ft weui-cell__ft_in-access">积分、优惠券、折扣券</view>
-            </navigator>
+
              <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <image src="/images/icon/address.png" class="navigator-icon"></image>

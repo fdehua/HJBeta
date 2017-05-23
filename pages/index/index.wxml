@@ -1,35 +1,10 @@
 <!--index.wxml-->
 <!--使用用户信息模版-->
 <import src="/templates/userinfo.wxml"/>
-
-
 <view class="page">
- 
   <view class="page__bd">
   <template is="userinfo" data="{{userInfo}}"/>
- </view>
-
   <image wx:if="{{remind == '加载中'}}" class="remind-img" src="/images/icon/loading.gif"></image>
-
-<!--   
-      <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
-        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
-        <block wx:for="{{background}}">
-          <swiper-item>
-            <view class="swiper-item bc_{{item}}"></view>
-          </swiper-item>
-        </block>
-      </swiper>-->
-   
-
-
-<!--<image src="{{bannerSrc}}" class="banner"></image>-->
-
-     <view class="page__hd">
-        <view class="page__title">WeUI</view>
-        <view class="page__desc">WeUI 是一套同微信原生视觉体验一致的基础样式库，由微信官方设计团队为微信内网页和微信小程序量身设计，令用户的使用感知更加统一。</view>
-    </view>
-
   <view  class="swiperbanner">
       <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
         autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
@@ -40,7 +15,7 @@
         </block>
       </swiper>
   </view>
-
+ </view>
 <!--<view class="widget">
 <navigator url="/pages/maps/maps" class="widget">
 
@@ -54,30 +29,6 @@
 
 </view>-->
 
-
-
- 
-<view class="widgetsbody">
-  <view class="widgets">
-      <block wx:for-items="{{list}}">
-          <view class="widgets_item">
-              <view id="{{item.id}}" class="widgets_info {{item.open ? 'widgets_info_show' : ''}}" bindtap="widgetsToggle">
-                  <text class="widgets_info-name">{{item.name}}</text>
-                  <image class="widgets_info-img" src="/images/icon/arrowright.png" mode="aspectFill" />
-              </view>
-              <view class="widgets_list {{item.open ? 'widgets_list_show' : ''}}">
-                  <block wx:for-items="{{item.pages}}" wx:for-item="page" wx:key="*this">
-                      <navigator url="/pages/{{page}}/{{page}}" class="widget">
-                          <text class="widget_name">{{page}}</text>
-                          <image class="widget_arrow" src="/images/icon/arrowright.png" mode="aspectFill" />
-                          <view class="widget_line {{index == 0 ? 'widget_line_first' : ''}}"></view>
-                      </navigator>
-                  </block>
-              </view>
-          </view>
-      </block>
-  </view>
-</view>
 
 <view class="page__ft">
         <image src="/images/icon/icon-footer.png" style="width: 84px; height: 19px;"></image>
