@@ -41,6 +41,7 @@ page{
     background-color: #F8F8F8;
     font-size: 16px;
     font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    
 }
 
 .page__hd {
@@ -76,14 +77,14 @@ page{
 
 .userinfo {
   display: flex;
-  flex-direction: column;
+  flex-direction:column;
   align-items: left;
   width: 100%;
 }
 .userinfo-avatar {
   width: 150rpx;
   height: 150rpx;
-  margin: 10rpx;
+  margin-right: 20rpx;
   border-radius: 50%;
   background-size: cover;
 }

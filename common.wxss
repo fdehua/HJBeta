@@ -1,7 +1,15 @@
 /** common.wxss **/
 .container{
-  background-color: #f6f6f6;
-  padding: 0;
+  color: #734838;
+  background-color: #EEE8CF;
+  padding:0;
+  margin: 0;
+  background-repeat:round;
+  background-size: 100% auto; 
+  background-position: top center;
+  /*background-image: url('/images/index/tri.png');*/
+  /*微信暂不支持静态bgimg文件，改用服务器url*/
+  /*background-image: url('https://mina.tijian18.com/images/bg/userinfor.png');*/
 }
 
 

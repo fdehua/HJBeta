@@ -2,9 +2,12 @@
 <!--使用用户信息模版-->
 <import src="/templates/userinfo.wxml"/>
 
-<view class="container">
-  <template is="userinfo" data="{{userInfo}}"/>
+
+<view class="page">
  
+  <view class="page__bd">
+  <template is="userinfo" data="{{userInfo}}"/>
+ </view>
 
   <image wx:if="{{remind == '加载中'}}" class="remind-img" src="/images/icon/loading.gif"></image>
 
@@ -53,8 +56,7 @@
 
 
 
-</view>
-
+ 
 <view class="widgetsbody">
   <view class="widgets">
       <block wx:for-items="{{list}}">
@@ -79,4 +81,6 @@
 
 <view class="page__ft">
         <image src="/images/icon/icon-footer.png" style="width: 84px; height: 19px;"></image>
- </view>
+</view>
+    
+</view>

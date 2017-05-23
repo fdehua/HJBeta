@@ -13,7 +13,7 @@
 
    "tabBar": {
    "color":"#9B9B9B",
-    "selectedColor":"#F7982A",
+    "selectedColor":"#BDA064",
     "backgroundColor":"#fff",
     "borderStyle":"white",
     "list": [{
@@ -23,12 +23,12 @@
       "selectedIconPath": "images/tab/tabHomeSelect.png"
     }, {
       "pagePath": "pages/tool/tool",
-      "text": "工具",
-      "iconPath": "images/tab/tabTool.png",
-      "selectedIconPath": "images/tab/tabToolSelect.png"
+      "text": "体检",
+      "iconPath": "images/tab/tabExam.png",
+      "selectedIconPath": "images/tab/tabExamSelect.png"
     }, {
       "pagePath": "pages/user/userindex",
-      "text": "我",
+      "text": "我的",
       "iconPath": "images/tab/tabUser.png",
       "selectedIconPath": "images/tab/tabUserSelect.png"
     }, {
@@ -39,12 +39,12 @@
     }]
   },
     "window":{
-    
     "backgroundTextStyle":"light",
     "navigationBarTextStyle": "black",
     "navigationBarTitleText": "华检体检 关注您和家人的健康",
-    "navigationBarBackgroundColor": "#f8f8f8",
-    "backgroundColor": "#f8f8f8"
+   
+    "navigationBarBackgroundColor": "#EEE8CF",
+    "backgroundColor": "#EEE8CF"
   },
   "networkTimeout": {
     "request": 10000,
