@@ -1,0 +1,76 @@
+<!--pages/user/user.wxml-->
+<import src="/templates/header.wxml" />
+<import src="/templates/footer.wxml" />
+<import src="/templates/userinfo.wxml"/>
+
+<view class="page">
+ <view class="page__bd">
+  <template is="userinfo" data="{{userInfo}}"/>
+  
+        <view class="weui-cells__title">个人中心</view>
+        <view class="weui-cells weui-cells_after-title">
+            <navigator url="bindmobile/bindmobile" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{icon20}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">（已）绑定手机</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{icon20}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">激活（查看）会员卡</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+              <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{icon20}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">体检预约</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+              <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{icon20}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">激活（查看）会员卡</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{icon20}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">体检报告</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{icon20}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">我的家人</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+                   <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{icon20}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">我的优惠</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+                   <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <view class="weui-cell__hd">
+                    <image src="{{icon20}}" style="margin-right: 5px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </view>
+                <view class="weui-cell__bd">收货地址</view>
+                <view class="weui-cell__ft weui-cell__ft_in-access">说明文字</view>
+            </navigator>
+        </view>
+   
+ <!--<button bindtap="downloadPdf">下载报告</button>
+<button bindtap="onOpenCard">我的卡包</button>-->
+</view>
+
+</view>
+
+       

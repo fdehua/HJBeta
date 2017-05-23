@@ -1,7 +1,7 @@
 {
   "pages":[
     "pages/index/index",
-    "pages/user/user",
+    "pages/user/userindex",
     "pages/user/login/login",
     "pages/user/bindmobile/bindmobile",
     "pages/custom/custom",
@@ -27,7 +27,7 @@
       "iconPath": "images/tab/tabTool.png",
       "selectedIconPath": "images/tab/tabToolSelect.png"
     }, {
-      "pagePath": "pages/user/user",
+      "pagePath": "pages/user/userindex",
       "text": "我",
       "iconPath": "images/tab/tabUser.png",
       "selectedIconPath": "images/tab/tabUserSelect.png"
