@@ -1,7 +1,7 @@
 <!--pages/user/user.wxml-->
 
 <import src="/templates/userinfo.wxml"/>
-<import src="/templates/footer.wxml" />
+<import src="/templates/footerfix.wxml" />
 <view class="page">
    <view class="page__bd">
   <template is="userinfo" data="{{userInfo}}"/>
@@ -21,7 +21,7 @@
       </navigator>
   </view>
 
-        <view class="weui-cells__title">个人中心</view>
+        <view class="weui-cells__title"></view>
         <view class="weui-cells weui-cells_after-title">
             <navigator url="bindmobile/bindmobile" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
@@ -75,7 +75,7 @@
                 <view class="weui-cell__bd">收货地址</view>
                 <view class="weui-cell__ft weui-cell__ft_in-access">寄送体检报告地址</view>
             </navigator>
-           <navigator url="../pages/custom/custom" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+           <navigator url="/pages/custom/custom" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <view class="weui-cell__hd">
                     <image src="/images/icon/custom.png" class="navigator-icon"></image>
                 </view>
@@ -88,6 +88,8 @@
 <button bindtap="onOpenCard">我的卡包</button>-->
 </view>
 
+  <template is="footerfix"/>
+  
 </view>
 
        

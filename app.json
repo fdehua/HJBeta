@@ -1,10 +1,13 @@
 {
   "pages":[
     "pages/index/index",
+    "pages/order/index",
     "pages/user/userindex",
     "pages/user/login/login",
     "pages/user/bindmobile/bindmobile",
     "pages/custom/custom",
+    "pages/emc/emc",
+    "pages/emc/emcdetail",
     "pages/tool/tool",
     "pages/news/news",
     "pages/maps/maps",
@@ -22,7 +25,7 @@
       "iconPath": "images/tab/tabHome.png",
       "selectedIconPath": "images/tab/tabHomeSelect.png"
     }, {
-      "pagePath": "pages/tool/tool",
+      "pagePath": "pages/order/index",
       "text": "体检",
       "iconPath": "images/tab/tabExam.png",
       "selectedIconPath": "images/tab/tabExamSelect.png"
@@ -41,7 +44,7 @@
     "window":{
     "backgroundTextStyle":"light",
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "华检体检 关注您和家人的健康",
+    "navigationBarTitleText": "华检体检",
    
     "navigationBarBackgroundColor": "#EEE8CF",
     "backgroundColor": "#EEE8CF"

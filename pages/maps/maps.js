@@ -12,7 +12,7 @@ Page({
    */
   data: {
     markers: [{
-      iconPath: '/image/icon/location.png',
+      iconPath: '/images/icon/location.png',
       id: 0,
       latitude: 31.240930,
       longitude: 121.520660,
@@ -22,7 +22,7 @@ Page({
       height: 30
     },
     {
-      iconPath: '/image/icon/location.png',
+      iconPath: '/images/icon/location.png',
       id: 0,
       latitude: 31.263280,
       longitude: 121.621630,
@@ -32,7 +32,7 @@ Page({
       height: 30
     },
     {
-      iconPath: '/image/icon/location.png',
+      iconPath: '/images/icon/location.png',
       id: 0,
       latitude: 31.211850,
       longitude: 121.459140,

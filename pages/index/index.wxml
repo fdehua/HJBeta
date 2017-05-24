@@ -1,6 +1,7 @@
 <!--index.wxml-->
 <!--使用用户信息模版-->
 <import src="/templates/userinfo.wxml"/>
+<import src="/templates/footer.wxml"/>
 <view class="page">
   <view class="page__bd">
   <template is="userinfo" data="{{userInfo}}"/>
@@ -30,8 +31,7 @@
 </view>-->
 
 
-<view class="page__ft">
-        <image src="/images/icon/icon-footer.png" style="width: 84px; height: 19px;"></image>
-</view>
-    
+
+  <template is="footer"/>
+  
 </view>

@@ -1,5 +1,11 @@
 <!--pages/user/bindmobile/bindmobile.wxml-->
+<import src="/templates/userinfo.wxml"/>
+<import src="/templates/footerfix.wxml" />
  <view class="page">
+    <view class="page__bd">
+       <template is="userinfo" data="{{userInfo}}"/>
+    </view>
+   <view class="page__bd page__bd_spacing">
    <view class="weui-cells__title">绑定手机号</view>
       <view class="weui-cell weui-cell_input weui-cell_vcode">
                 <view class="weui-cell__hd">
@@ -36,4 +42,7 @@
         <view class="weui-btn-area">
             <button class="weui-btn" type="primary" bindtap="showTopTips">确定</button>
         </view>
+  
+     <template is="footerfix"/>
+     </view>
 </view>

@@ -1,0 +1,38 @@
+<!--pages/order/index.wxml-->
+<import src="/templates/userinfo.wxml"/>
+<import src="/templates/footer.wxml"/>
+
+<view class="page">
+
+  <view class="page__bd">
+<!--<template is="userinfo" data="{{userInfo}}"/>-->
+  <view  class="swiperbanner">
+    <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+      autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+      <block wx:for="{{imgUrls}}">
+        <swiper-item>
+        <image src="{{item}}" class="imagebanner"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="weui-grids">
+      <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="/images/icon/package.png" />
+        <view class="weui-grid__label">体检套餐</view>
+      </navigator>
+     <navigator url="" class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="/images/icon/exam.png" />
+        <view class="weui-grid__label">体检预约</view>
+      </navigator>
+      <navigator url="/pages/emc/emc" class="weui-grid" hover-class="weui-grid_active">
+        <image class="weui-grid__icon" src="/images/icon/emc.png" />
+        <view class="weui-grid__label">体检中心</view>
+      </navigator>
+  </view>
+
+</view>
+
+  <!--<template is="footer"/>-->
+  
+</view>

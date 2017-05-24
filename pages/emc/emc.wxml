@@ -1,0 +1,56 @@
+<!--pages/emc/emc.wxml-->
+<view class="page">
+
+  <view class="page__bd">
+ 
+    <view  class="swiperbanner">
+      <swiper indicator-dots="{{indicatorDots}}" vertical="{{vertical}}"
+        autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+        <block wx:for="{{imgUrls}}">
+          <swiper-item>
+          <image src="{{item}}" class="imagebanner"></image>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+
+            <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__hd">体检中心列表</view>
+            <view class="weui-panel__bd">
+                <navigator url="/pages/emc/emcdetail" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="https://mina.tijian18.com/images/mec/02.jpg" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">浦东陆家嘴店</view>
+                        <view class="weui-media-box__desc">上海市浦东大道545号裕景坊2F（裕景大饭店裙楼，东方路口） </view>
+                        <view class="weui-media-box__desc">距离1000m </view>
+                    </view>
+                </navigator>
+                <navigator url="/pages/emc/emcdetail" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="https://mina.tijian18.com/images/mec/01.jpg" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">浦西淮海店</view>
+                        <view class="weui-media-box__desc">上海市嘉善路118号（复兴中路口）明园商务中心B座3F</view>
+                         <view class="weui-media-box__desc">距离1000m </view>
+                    </view>
+                </navigator>
+                <navigator url="/pages/emc/emcdetail" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">
+                    <view class="weui-media-box__hd weui-media-box__hd_in-appmsg">
+                        <image class="weui-media-box__thumb" src="https://mina.tijian18.com/images/mec/03.jpg" />
+                    </view>
+                    <view class="weui-media-box__bd weui-media-box__bd_in-appmsg">
+                        <view class="weui-media-box__title">浦东金桥店</view>
+                        <view class="weui-media-box__desc">上海市金海路1000号金领之都15号楼</view>
+                         <view class="weui-media-box__desc">距离1000m </view>
+                    </view>
+                </navigator>
+            </view>
+            
+        </view>
+
+  </view>
+
+  </view>

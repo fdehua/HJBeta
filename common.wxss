@@ -1,4 +1,6 @@
 /** common.wxss **/
+
+/*正在使用Start*/
 .container{
   color: #734838;
   background-color: #EEE8CF;
@@ -11,6 +13,22 @@
   /*微信暂不支持静态bgimg文件，改用服务器url*/
   /*background-image: url('https://mina.tijian18.com/images/bg/userinfor.png');*/
 }
+.navigator-icon {
+  margin-right: 5px;
+  width:20px; 
+  height: 20px;
+vertical-align: top;
+}
+.weui-footer{
+    margin-bottom: 10px;
+}
+.weui-footer_fixed-bottom{
+    margin-bottom: 0;
+}
+
+
+
+/*正在使用End*/
 
 
 .swiper-item{
@@ -25,7 +43,6 @@
     background: #f5f5f5;
     text-align: center;
 }
-
 
 .remind-img {
   width: 250rpx;

@@ -1,10 +1,12 @@
 <template name="footer">
  <view class="page__bd page__bd_spacing">
-     <view class="weui-footer weui-footer_fixed-bottom">
-            <view class="weui-footer__links">
-                <navigator url="" class="weui-footer__link">华检健康体检</navigator>
-            </view>
-            <view class="weui-footer__text">Copyright © 2008-2017 tijian18.com</view>
-        </view>
+        <!--<view class="page__ft">
+            <image src="/images/icon/icon-footer.png" style="width: 84px; height: 19px;"></image>
+        </view>-->
+      <view class="weui-footer">
+        <view class="weui-footer__text">华检体检关注您和家人的健康</view>
+        <view class="weui-footer__text">Copyright © 2008-2017 tijian18.com</view>
+      </view>
   </view>
 </template>
+
