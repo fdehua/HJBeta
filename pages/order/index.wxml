@@ -19,7 +19,7 @@
   <view class="weui-grids">
       <navigator url="" class="weui-grid" hover-class="weui-grid_active">
         <image class="weui-grid__icon" src="/images/icon/package.png" />
-        <view class="weui-grid__label">体检套餐</view>
+        <view class="weui-grid__label">购买套餐</view>
       </navigator>
      <navigator url="" class="weui-grid" hover-class="weui-grid_active">
         <image class="weui-grid__icon" src="/images/icon/exam.png" />

@@ -11,6 +11,7 @@
     "pages/tool/tool",
     "pages/news/news",
     "pages/maps/maps",
+    "pages/maps/mapsdetail",
     "pages/logs/logs"
   ],
 
@@ -34,12 +35,9 @@
       "text": "我的",
       "iconPath": "images/tab/tabUser.png",
       "selectedIconPath": "images/tab/tabUserSelect.png"
-    }, {
-      "pagePath": "pages/custom/custom",
-      "text": "客服",
-      "iconPath": "images/tab/tabContact.png",
-      "selectedIconPath": "images/tab/tabContactSelect.png"
-    }]
+    }
+ 
+    ]
   },
     "window":{
     "backgroundTextStyle":"light",

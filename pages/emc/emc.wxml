@@ -15,6 +15,7 @@
     </view>
 
             <view class="weui-panel weui-panel_access">
+              <view class="weui-panel__hd">当前位置：{{mylocation}}</view>
             <view class="weui-panel__hd">体检中心列表</view>
             <view class="weui-panel__bd">
                 <navigator url="/pages/emc/emcdetail" class="weui-media-box weui-media-box_appmsg" hover-class="weui-cell_active">

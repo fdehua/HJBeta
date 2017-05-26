@@ -38,6 +38,22 @@ Page({
         remind: ''
       });
     }, 3000);
-  } 
+  } ,
+  /**
+  * 用户点击右上角分享
+  */
+  onShareAppMessage: function () {
+    return {
+      title: '华检体检小程序欢迎您',
+      path: '/pages/index/index',
+      success: function (res) {
+        // 转发成功
+        Console.log(res.shareTickets)
+      },
+      fail: function (res) {
+        // 转发失败
+      }
+    }
+  }
 
 })

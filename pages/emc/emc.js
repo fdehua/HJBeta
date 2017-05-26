@@ -1,6 +1,8 @@
 // pages/emc/emc.js
 var app = getApp()
 var Api = require('../../utils/api.js');
+var QQMapWX = require('../../utils/qqmap-wx-jssdk.js');
+var qqmapsdk;
 
 Page({
 
@@ -27,7 +29,35 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-  
+    // 实例化API核心类
+    qqmapsdk = new QQMapWX({
+      key: '2DEBZ-JXW3U-MIVVB-2D5V4-K2WJ3-OUBI3'
+    });
+    var that=this
+    wx.getLocation({
+      type: 'gcj02', //返回可以用于wx.openLocation的经纬度
+      success: function (res) {
+      qqmapsdk.reverseGeocoder({
+        location: {
+          latitude: res.latitude,
+          longitude: res.longitude
+        },
+        success: function (res) {
+          console.log(res);
+          that.setData({
+            mylocation: res.result.address 
+          })
+        },
+        fail: function (res) {
+          console.log(res);
+        },
+        complete: function (res) {
+          console.log(res);
+        }
+      });
+
+      }
+    })
   },
 
   /**

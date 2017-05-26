@@ -76,15 +76,41 @@ Page({
   },
   onOpenCard: function()
   {
-        wx.openCard({
+    // var uservalue = wx.getStorageSync('user')
+    // var sessionId = uservalue.sessionId
+    // var openid = uservalue.openid
+    // var timestamp = uservalue.timestamp
+ 
+
+    wx.addCard({
       cardList: [
         {
-          cardId: 'pbLatjtZ7v1BG_ZnTjbW85GYc_E8',
-          code: '916679873278'
-        } 
+          cardId: '',
+          cardExt: '{"code": "", "openid": "", "timestamp": "", "signature":""}'
+        }
       ],
-      success: function(res) {
+      success: function (res) {
+        console.log(res.cardList) // 卡券添加结果
+
+        wx.openCard({
+          cardList: [
+            {
+              cardId: 'pbLatjtZ7v1BG_ZnTjbW85GYc_E8',
+              code: '916679873278'
+            }
+          ],
+          success: function (res) {
+          }
+        })
+
+
       }
     })
+
+
+
+
+
+    
   }
 })

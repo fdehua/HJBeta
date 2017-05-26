@@ -16,7 +16,7 @@
 
         <view class="weui-cells__title">浦东陆家嘴店</view>
         <view class="weui-cells weui-cells_after-title">
-           <navigator url="/pages/maps/maps" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+           <navigator url="/pages/maps/mapsdetail" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                <view class="weui-cell__hd">
                     <image src="/images/icon/location.png" class="navigator-icon"></image>
                 </view>

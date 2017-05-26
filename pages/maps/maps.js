@@ -60,7 +60,7 @@ Page({
     //在地图上显示控件，控件不随着地图移动
     // controls: [{
     //   id: 1,
-    //   iconPath: '/image/icon/map.png',
+    //   iconPath: '/images/icon/map.png',
     //   position: {
     //     left: 0,
     //     top: 200,
